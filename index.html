@@ -20,7 +20,7 @@
 		<figure>
 			<img class="cover" src="pictures/cover.jpg" alt="presentation first image">
 			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">curso 2017-2018</a>
+				<p>curso 2017-2018</p>
 			</figcaption>
 		</figure>
 		<style>
@@ -31,6 +31,11 @@ div.peque {
 .container {
   position: relative;
   width: 50%;
+}
+
+.container2 {
+  position: relative;
+  width: 120%;
 }
 
 .image {
@@ -52,7 +57,23 @@ div.peque {
   background-color: #008CBA;
 }
 
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
 .container:hover .overlay {
+  opacity: 1;
+}
+
+.container2:hover .overlay2 {
   opacity: 1;
 }
 
@@ -107,6 +128,10 @@ div.peque {
 		<p>El <b>southbridge</b> es más lento y la información que lo atraviesa debe pasar antes por el northbridge. Está conectado a otros periféricos como USB, SATA ò disco duro.</p>
 		</div>
 	</section>
+	
+	<section class="slide">
+		<img class="cover" src="pictures/esquema.jpg" alt="presentation first image">
+	</section>
 
 	<section class="slide">
 		<h2>Un poco de historia</h2>
@@ -120,6 +145,21 @@ div.peque {
 			<img src="pictures/commodore_amiga.jpg" alt="Definición" class="image">
 			<div class="overlay">
 				<div class="text">Commodore Amiga 1000</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<img class="cover" src="pictures/commodore_amiga_chipset.png" alt="commodore">
+	</section>
+	
+	
+	<section class="slide">
+		<h2>PSP</h2>
+		<div class="container2">
+			<img src="pictures/psp2.jpg" alt="psp" class="image">
+			<div class="overlay2">
+				<img src="pictures/psp2zoom.jpg" alt="psp" class="image" >
 			</div>
 		</div>
 	</section>
@@ -140,6 +180,10 @@ div.peque {
 			
 		</ol>
 	</section>
+	
+	<section class="slide">
+		<img class="cover" src="pictures/mips_magnum.jpg" alt="mips">
+	</section>
 
 	<section class="slide">
 		<h2>Ahora vs Antes</h2>
@@ -155,52 +199,32 @@ div.peque {
 			<td>66(FSB)</td>
 		</tr>
 		<tr>
-			<th scope="row">AMD-8000</th>
-			<td>2004</td>
-			<td>800(HT 1.x)</td>
+			<th scope="row">AMD M690T </th>
+			<td>2007</td>
+			<td>800 (HT 2.0)</td>
+		</tr>
+		<tr>
+			<th scope="row">AMD 990FX </th>
+			<td>2011</td>
+			<td>2600 (HT 3.0)</td>
 		</tr>
 		</table>
-	</section>
-
-	<section class="slide">
-		
-	</section>
-
-	<section class="slide">
-		
-	</section>
-
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
 	</section>
 
 	<section class="slide">
 		<h2 class="shout shrink">Preguntas</h2>
 	</section>
 
-	<section class="slide">
-ç
-	</section>
-
 	<section class="slide grid">
 		<h2>Bibliografía</h2>
+		<p><a href="https://en.wikipedia.org/wiki/Chipset">Wikipedia</a></p>
+		<p><a href="https://computer.howstuffworks.com/motherboard3.htm">howstuffworks.com</a></p>
+		<p><a href="https://www.computerhope.com/jargon/c/chipset.htm">Computer Hope</a></p>
 	</section>
 
 	<section class="slide" id="see-more">
 		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
+			<a href="https://github.com/terceranexus6/Presentaciones">Todo el repo GitHub</a>
 		</h2>
 		<style>
 			#see-more h2 {
